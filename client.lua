@@ -48,8 +48,8 @@ AddEventHandler('bixbi_core:Loading', function(time, text)
 	Loading(time, text)
 end)
 function Loading(time, text)
-	if Config.LoadingType == "pogress" then
-		exports['pogressBar']:drawBar(time, text)
+	if Config.LoadingType == "progress" then
+		exports['progressBar']:drawBar(time, text)
 	elseif Config.LoadingType == "mythic" then
 		exports['mythic_progbar']:Progress({
 			name = string.gsub(text, "%s+", ""),
